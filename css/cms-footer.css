@@ -1,0 +1,140 @@
+footer,footer a {
+    color: #FFF;
+}
+.footer-info {
+    background: #0CA802;
+    padding: 15px 0;
+    font-size: 18px;
+}
+.footer-info .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-logo {
+    margin-right: 20px;
+    max-width: 80px;
+    width: 100%;
+}
+.footer-info .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin-right: 100px;
+}
+.footer-info .left > div:last-child {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+.footer-content > div > div:first-child,.footer-content > div > div:last-child {
+    position: relative;
+    padding-left: 37px;
+}
+.footer-content > div > div:first-child:before {
+    font-family: "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands";
+    content: '\f3c5';
+    font-size: 22px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+.footer-content > div > div:last-child:before {
+    font-family: "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands";
+    content: '\f0e0';
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer-info .right {
+    text-align: right;
+    width: 20%;
+}
+.copyright {
+    background: #005E15;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.copyright .wrap {
+    font-weight: normal;
+    font-size: 16px;
+}
+.online_chat {
+    position: fixed;
+    right: 2%;
+    top: 70%;
+    z-index: 999;
+    width: 60px;
+}
+.online_chat_all {
+    display: none;
+}
+#chat_box {
+    position: fixed;
+    left: calc(50% - 207px);
+    top: 20%;
+    z-index: 1001;
+    background: #d0d0d0;
+    padding: 10px;
+}
+.chat_box_close {
+    color: #ddd9d9;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+    cursor: pointer;
+}
+.chat_box-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+
+@media all and (max-width: 1200px) {
+    .footer-info {
+        padding: 15px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .footer-info .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-info .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .footer-info .right {
+        text-align: center;
+        width: 100%;
+    }
+    .copyright {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width: 570px) {
+    #chat_box {
+        position: fixed;
+        left: 0;
+        top: 20%;
+    }
+}
